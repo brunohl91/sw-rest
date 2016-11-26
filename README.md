@@ -7,11 +7,10 @@ Para utilizar este projeto é necessário:
 - Python 2.7
 - Postgres
 - Instalar bibliotecas
-  psycopg2
-  flask
-  flask_cors
-  flask_basicauth
-  simplejson
-  
+  - psycopg2
+  - flask
+  - flask_cors
+  - flask_basicauth
+  - simplejson
 - Criar o banco em db.sql
 - Alterar as credenciais do banco de dados conforme necessário
