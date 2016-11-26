@@ -1,0 +1,19 @@
+<div class="card {{host.statusClass}}" >
+  <div class="card-img-container" ng-click="zabbixCtrl.showExtraInfo()">
+    <img ng-src="icones/{{host.host}}.png">
+  </div>
+  <div class="card-title-container">
+    <span class="card-title">{{host.nameDisplay}}</span>
+    <span class="card-city">{{host.city}}</span>
+  </div>
+  <div class="card-buttons">
+    <table class="table table-condensed table-hover table-striped">
+      <tbody>
+        <tr ng-repeat="(key, item) in host.items" style="color:gray">
+          <td>{{item.key_ | nomeMetrica}}</td>
+          <td>{{item.lastvalue}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

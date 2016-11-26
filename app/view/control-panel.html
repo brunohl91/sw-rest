@@ -1,0 +1,32 @@
+<div class="control-panel">
+  <h2>Monitoramento de Rede</h2>
+  <table class="table table-condensed">
+    <tr>
+      <th colspan="4">Valor Máximo</th>
+    </tr>
+    <tr>
+      <td>2 Mbps <input type="radio" value="2000" ng-model="config.max"/></td>
+      <td>6 Mbps <input type="radio" value="6000" ng-model="config.max"/></td>
+      <td>10 Mbps <input type="radio" value="10000" ng-model="config.max"/></td>
+      <td>15 Mbps <input type="radio" value="15000" ng-model="config.max"/></td>
+    </tr>
+    <tr>
+      <td>
+        <span class="upload-icon glyphicon glyphicon-upload"></span> 
+         <span>Wan: {{data.wan.diff.ifin | megabytes}}</span>
+       </td>
+      <td>
+        <span class="download-icon glyphicon glyphicon-download"></span> 
+         <span>Wan: {{data.wan.diff.ifout | megabytes}}</span>
+       </td>
+      <td>
+        <span class="upload-icon glyphicon glyphicon-upload"></span> 
+         <span>VPN: {{data.ovpns1.diff.ifin | megabytes}}</span>
+       </td>
+      <td>
+        <span class="download-icon glyphicon glyphicon-download"></span> 
+         <span>VPN: {{data.ovpns1.diff.ifout | megabytes}}</span>
+       </td>
+    </tr>
+  </table>
+</div>
